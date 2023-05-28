@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="container-heading">
+                <h1 class="bigHeading">Simple JavaScript Shopping Cart</h1>
+                <p class="headingPara">Simplified 'add to cart' functionality. Uses Javascript and WebStorage
+                    API/Cookies to remember cart
+                    data converted to JSON format.
+
+                    Click 'Empty Cart' button to remove session cookies from browser.</p>
+            </div>
+            <div class="container-cards">
+                <div class="cards">
+                    <h1 class="cards-heading">
+                        Product 1
+                    </h1>
+                    <h3 class="cards-price" data-version-value="100">
+                        &#8377; 100
+                    </h3>
+                    <button class="btn btn-main btn1" data-version-number="1">Add to cart</button>
+                </div>
+                <div class="cards">
+                    <h1 class="cards-heading">
+                        Product 2
+                    </h1>
+                    <h3 class="cards-price" data-version-value="200">
+                        &#8377; 200
+                    </h3>
+                    <button class="btn btn-main btn2" data-version-number="2">Add to cart</button>
+
+
+                </div>
+                <div class="cards">
+                    <h1 class="cards-heading">
+                        Product 3
+                    </h1>
+                    <h3 class="cards-price" data-version-value="300">
+                        &#8377; 300
+                    </h3>
+                    <button class="btn btn-main btn3" data-version-number="3">Add to cart</button>
+                </div>
+            </div>
+            <div class="container-cart">
+                <h1 class="cartHeading">Cart</h1>
+                <div class="proPri">
+                    <span class="product">Product <span class="price">Price</span></span>
+                    <div class="itemDisplay">
+                    </div>
+
+                    <!-- <hr class="hr"> -->
+
+                </div>
+                <div class="cart-logic">
+                    <!-- <hr> -->
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th class="tableHeading">ITEMS</th>
+                                <th class="tableHeading">PRICE</th>
+                            </tr>
+                            <tr>
+                                <td class="tableData">X <span class="span-items">0</span></td>
+                                <td class="tableData"><span class="ruppee">&#8377</span><span
+                                        class="span-price">0</span></td>
+
+                            </tr>
+
+                        </table>
+
+                        <div class="lastBtn">
+                            <button class="btn emptyCart">Empty </button>
+                            <button class="btn checkout">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
